@@ -24,8 +24,6 @@ The notification will be sent using HTTP POST request, so you need to make the r
 
 ## API Documentations
 
-You can download the Postman Collection JSON here: https://api.postman.com/collections/1518342-1ab29a75-95d2-4e61-a257-0971e15b75a0?access_key=PMAT-01HT9WP343FDK3QKB7HGE2AKHJ
-
 After you download the Postman Collection, you can try the endpoints inside "BambangShop Receiver" folder.
 
 Postman is an installable client that you can use to test web endpoints using HTTP request.
@@ -34,13 +32,6 @@ You can install Postman via this website: https://www.postman.com/downloads/
 
 ## How to Run in Development Environment
 1.  Set up environment variables first by creating `.env` file.
-    Here is the example of `.env` file:
-    ```bash
-    ROCKET_PORT=8001
-    APP_INSTANCE_ROOT_URL=http://localhost:${ROCKET_PORT}
-    APP_PUBLISHER_ROOT_URL=http://localhost:8000
-    APP_INSTANCE_NAME=Safira Sudrajat
-    ```
     Here are the details of each environment variable:
     | variable                | type   | description                                                     |
     |-------------------------|--------|-----------------------------------------------------------------|
@@ -60,15 +51,13 @@ You can install Postman via this website: https://www.postman.com/downloads/
 
 ## Mandatory Checklists (Subscriber)
 -   [ ] Clone https://gitlab.com/ichlaffterlalu/bambangshop-receiver to a new repository.
--   **STAGE 1: Implement models**
+-   **STAGE 1: Implement models and repositories**
     -   [ ] Commit: `Create Notification model struct.`
     -   [ ] Commit: `Create SubscriberRequest model struct.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
--   **STAGE 2: Implement repositories**
     -   [ ] Commit: `Create Notification database and Notification repository struct skeleton.`
     -   [ ] Commit: `Implement add function in Notification repository.`
     -   [ ] Commit: `Implement list_all_as_string function in Notification repository.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
+    -   [ ] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 3: Implement services and controllers**
     -   [ ] Commit: `Create Notification service struct skeleton.`
     -   [ ] Commit: `Implement subscribe function in Notification service.`
@@ -79,7 +68,7 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [ ] Commit: `Implement receive function in Notification controller.`
     -   [ ] Commit: `Implement list_messages function in Notification service.`
     -   [ ] Commit: `Implement list function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-3" questions in this README.
+    -   [ ] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -89,5 +78,3 @@ This is the place for you to write reflections:
 #### Reflection Subscriber-1
 
 #### Reflection Subscriber-2
-
-#### Reflection Subscriber-3
