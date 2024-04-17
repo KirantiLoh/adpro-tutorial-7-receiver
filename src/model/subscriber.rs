@@ -1,4 +1,4 @@
-use rocket::serde::{Deserialize, Serialize}
+use rocket::serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Deserialize, Serialize)]
 #[serde(crate = "rocket::serde")]
