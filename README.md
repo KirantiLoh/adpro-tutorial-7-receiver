@@ -77,4 +77,7 @@ This is the place for you to write reflections:
 
 #### Reflection Subscriber-1
 
+1. RwLock memungkinkan untuk thread yang berbeda untuk membaca data yang sama sekaligus, dan hanya dilock ketika ada proses write. Sedangkan Mutex lock ketika read dan write.
+2. Karena Rust mengutamakan memory safety, dengan adanya variabel static terdapat kemungkinan race condition.
+
 #### Reflection Subscriber-2
