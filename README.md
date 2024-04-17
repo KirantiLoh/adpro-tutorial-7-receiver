@@ -73,3 +73,7 @@ This is the place for you to write reflections:
 2. Karena Rust mengutamakan memory safety, dengan adanya variabel static terdapat kemungkinan race condition.
 
 #### Reflection Subscriber-2
+
+1. Sudah, lib.rs menentukan struktur dan fungsionalitas dari fitur-fitur yang ada pada keseluruhan projek sehingga bagian lain dari projek dapat dengan mudah mengimpor fitur yang diperlukan.
+2. Dengan pattern observer, untuk memasukkan lebih banyak subscriber kita hanya perlu membuat struct baru yang mengimplementasikan Subscriber. Dengan demikian lebih banyak subscriber bisa dibuat.
+3. Sudah, saya telah mencoba menggunakan fitur yang ada pada Postman. Fitur collections sangat membantu, karena collections tersebut dapat berlaku sebagai dokumentasi API yang ada dan dapat dites secara langsung
